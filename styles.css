@@ -122,3 +122,19 @@ button {
     width: 340px;
     bottom: 0;
 }
+
+.share p {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    padding: 0;
+    margin-right: 1em;
+    color: var(--gray-blue);
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+}
