@@ -1,0 +1,129 @@
+:root {
+    --very-dark-gray: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --gray-blue: hsl(212, 23%, 69%);
+    --light-gray: hsl(210, 46%, 95%);
+}
+
+* {
+    background: var(--light-gray);
+    color: var(--very-dark-gray); 
+    margin: 0;
+    padding: 0;
+    box-sizing: initial;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+body {
+    min-height: 100vh;
+    padding: 100px 10px;
+    font-family: "Manrope", sans-serif;
+}
+
+p {
+    font-size: 13px;
+}
+
+article.description {
+    margin: 1px;
+    padding: 1px;
+}
+
+.card {
+    background: white;
+    color: var(--gray-blue);
+    border-radius: 20px;  
+}
+
+.card .description {
+    padding: 30px;
+    background: white;
+}
+
+.card .description h2 {
+    font-size: 20px;
+    line-height: 1.4;
+    padding-bottom: 20px;
+    font-weight: 700;
+    background: white;
+}
+
+.card .main-image img {
+    height: 250px;
+    width: 100%;
+}
+
+.card .avatar .open-share {
+    display: none;
+}
+
+article.description {
+    align-items: baseline;
+}
+
+.light {
+    padding-bottom: 30px;
+    background: white;
+}
+
+.avatar-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    width: 100%;
+}
+
+.card .avatar .avatar-img .avatar-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    background: white;
+}
+
+.card .avatar .avatar-img .avatar-text img {
+    width: 20%;
+    border-radius: 50%;
+    padding: 20px;
+    background: white;
+}
+
+.card .avatar .avatar-img .avatar-text .avatar-words h4 {
+    background: white;
+}
+
+.card .avatar .avatar-img .avatar-text .avatar-words p {
+    background: white;
+}
+
+.share {
+    border-radius: 50%;
+    padding: 10px;
+    width: fit-content;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* @media (min-width: 375px) {
+    .card {
+
+    }
+    
+} */
