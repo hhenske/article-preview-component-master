@@ -6,124 +6,106 @@
 }
 
 * {
-    background: var(--light-gray);
+    font-family: "Manrope", sans-serif;
     color: var(--very-dark-gray); 
     margin: 0;
     padding: 0;
-    box-sizing: initial;
+    box-sizing: border-box;
 }
 
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+html {
+    min-width: 375px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 body {
+    width: 90%;
+    margin: auto;
     min-height: 100vh;
-    padding: 100px 10px;
-    font-family: "Manrope", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+
+.card {
+    margin-top: 4em;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.cover img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.description {
+    padding: 2em 2em 1em 2em;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color:var(--very-dark-gray);
 }
 
 p {
     font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding: 1em 0;
+    color: var(--desaturated-dark-blue);
 }
 
-article.description {
-    margin: 1px;
-    padding: 1px;
-}
-
-.card {
-    background: white;
-    color: var(--gray-blue);
-    border-radius: 20px;  
-}
-
-.card .description {
-    padding: 30px;
-    background: white;
-}
-
-.card .description h2 {
-    font-size: 20px;
-    line-height: 1.4;
-    padding-bottom: 20px;
-    font-weight: 700;
-    background: white;
-}
-
-.card .main-image img {
-    height: 250px;
-    width: 100%;
-}
-
-.card .avatar .open-share {
-    display: none;
-}
-
-article.description {
-    align-items: baseline;
-}
-
-.light {
-    padding-bottom: 30px;
-    background: white;
-}
-
-.avatar-img {
+.profile {
     display: flex;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
-    justify-content: space-evenly;
-    background: white;
-    width: 100%;
+    margin-top: 1em;
 }
 
-.card .avatar .avatar-img .avatar-text {
+.profile img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+h2 {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    font-size: small;
+    font-weight: 700;
+    color: var(--very-dark-gray);
+    flex: 1;
+}
+
+span{
+    color: var(--desaturated-dark-blue);
+    font-weight: 700;
+}
+
+button {
+    border: none;
+}
+
+#share-btn {
+    padding: 0.5em;
+    border-radius: 50px;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    max-width: 250px;
-    background: white;
-}
-
-.card .avatar .avatar-img .avatar-text img {
-    width: 20%;
-    border-radius: 50%;
-    padding: 20px;
-    background: white;
-}
-
-.card .avatar .avatar-img .avatar-text .avatar-words h4 {
-    background: white;
-}
-
-.card .avatar .avatar-img .avatar-text .avatar-words p {
-    background: white;
-}
-
-.share {
-    border-radius: 50%;
-    padding: 10px;
-    width: fit-content;
+    border: none;
+    object-fit: contain;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+    margin-top: 2em;
 }
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
-/* @media (min-width: 375px) {
-    .card {
-
-    }
-    
-} */
